@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        img {
+            max-width: 300px;
+            object-fit: cover;
+        }
+
+        .loading {
+            background-color: red;
+            color: aliceblue;
+            position: fixed;
+            right: 0;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1>Image gallery</h1>
+        <input type="text" class="search">
+        <button class="katt">Search</button>
+        <div class="loading">Loading...</div>
+        <div class="image-gallery"></div>
+        <script type="module" src="main.js"></script>
+    </div>
+</body>
+
+</html>
